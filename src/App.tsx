@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Example1} from "./сomponents/Example1/Example1";
+import {Example2} from "./сomponents/Example3/Example2";
+import {Example3} from "./сomponents/Example4/Example3";
+import {Example4} from "./сomponents/Example2/Example4";
+import {Example5} from "./сomponents/Example5/Example5";
+import {motion, useScroll, useSpring} from "framer-motion";
+import {Example6} from "./сomponents/Example6/Example6";
 
 function App() {
+
+    // const { scrollYProgress } = useScroll();
+    // const scaleX = useSpring(scrollYProgress, { stiffness: 500, damping: 25 })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/*<motion.div style={{ scaleX }} className='progress-bar'/>*/}
+      <Example1 />
+        <Example4 />
+        <Example2 />
+        <Example3 />
+      <Example5 />
+        {/*<Example6 />*/}
     </div>
   );
 }
